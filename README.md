@@ -6,7 +6,7 @@
 An individual project designed for beginners.  
 为初学者设计的独立项目。
 
-## [SPSS](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/SPSS.md) (_Writing_)
+## [SPSS](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/markdwon/SPSS.md) (_Writing_)
 
 ### 一、软件简介
 
@@ -47,7 +47,7 @@ An individual project designed for beginners.
 
 - 邱泽奇《社会统计学》：对社会统计分析方法的系统介绍
 
-## [R Language](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/R.md) (_Writing_)
+## [R Language](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/markdwon/R.md) (_Writing_)
 
 ### 一、软件简介
 
@@ -62,7 +62,7 @@ An individual project designed for beginners.
 
 - Jonge, E. d. & Loo, M. v. d., _An introduction to data cleaning with R_: R 语言数据清理进阶
 
-## [Python](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/Python.md) (_Writing_)
+## [Python](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/markdwon/Python.md) (_Writing_)
 
 ### 一、软件简介
 

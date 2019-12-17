@@ -129,3 +129,8 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 ## 四、拓展阅读
 
 - 邱泽奇《社会统计学》：对社会统计分析方法的系统介绍
+
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });</script>
