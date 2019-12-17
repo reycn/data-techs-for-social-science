@@ -17,7 +17,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 
 - Syntax：命令、指示请参见 [IBM 社区教程](https://www.ibm.com/developerworks/cn/data/library/techarticle/dm-1111zhangsw/index.html)
 
-- 清洗数据（data cleaning）；数据挖掘（data mining）
+- 清洗数据(data cleaning)；数据挖掘(data mining)
 
 - 处理、冶炼、提纯、设计、打造、包装
 
@@ -49,7 +49,8 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 
   - 两种假设与两类错误
 
-    - 零/原假设(Null/default hypothesis) 与备择假设(Alternative hypothesis)
+    - 零/虚无/原假设 (Null/default hypothesis, $H_0$) 希望证伪或推翻的假设，一般是
+    - 备择/对立假设 (Alternative hypothesis, $H_1$) 希望证实或支持的假设
     - 一类错误(type I error)：“弃真”，原假设正确但被错误地拒绝——男人怀孕了
     - 二类错误(type II error)：“取伪”，原假设错误但被错误地接受——孕妇没怀孕
 
@@ -59,15 +60,40 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
     0.05 \*
     0.01 \*\*
 
-- **比较均值** 统计课上已经学过
+- **均值 t 检验** 统计课上已经学过
+
   - 类型
-    1. 单样本 t 检验 (One-Sample T Test)
-    2. 独立样本 t 检验 (Independent- Samples T Test )
-    3. 配对样本 t 检验 (Paired-Samples T Test )
+    1. 单样本 t 检验 (One-Sample T Test)：单个样本总体均值和我们指定的值是否有显著差异。
+    2. 两独立样本 t 检验 (Independent- Samples T Test )：两个互相独立的样本的总体均值是否有显著差异。  
+       “独立”指两个样本相互独立，即从一个总体中抽取样本，对从另一个总体中抽取样本，没有任何影响（样本容量可以不同）。如：男性和女性的收入。
+    3. 两配对样本 t 检验 (Paired-Samples T Test )：两个互相有联系的样本总体的总体均值是否有显著差异。  
+       “互相有联系”指抽样不独立而有关联：个案前后的两种属性、某个事物的两个侧面。如：服用药品前后的效果。
   - 操作
-  - 假定
-  - 报告
-  - [\* 单尾 t 检验？](https://wenku.baidu.com/view/e8ff504aa8956bec0975e30a.html)
+
+    - 单样本 t 检验
+      1. `分析` - `比较均值` - `单样本 t 检验`
+      2. `检验变量` - `检验值` 输入检验数值
+      3. 在 `选项` 选择 `缺失值` 的处理办法（ `分析顺序排除` 分析设计变量有缺失值时剔除；`列表排除` 剔除任一变量上含缺失值变量）
+      - 判断： $p < 0.05$ ($p < \alpha, \alpha$ 也可以是 0.01) 即存在显著差异
+      - 假定：正态总体、随机样本
+    - 两独立样本 t 检验
+      1.  `分析` - `比较均值` - `独立样本 t 检验`
+      2.  选择 `检验变量`，检验什么变量
+      3.  选择 `分组变量`，用什么变量分成两类
+      4.  `定义组`，怎么分成两类
+      5.  `选项` 同上
+      - 判断： $p < 0.05$ ($p < \alpha, \alpha$ 也可以是 0.01) 即存在显著差异
+      - 假定：正态总体、随机样本、两样本总体方差相等（方差齐性）
+    - 两配对样本 t 检验
+      1.  `分析` - `比较均值` - `配对样本 t 检验`
+      2.  选择一对或若干 `成对变量`，检验什么变量
+      3.  `选项` 同上
+      - 判断： $p < 0.05$ ($p < \alpha, \alpha$ 也可以是 0.01) 即存在显著差异
+      - 假定：正态总体、随机样本、两样本总体方差相等（方差齐性）
+
+  - 报告：均值、p 值
+  - [\* 单尾 t 检验如何实现？](https://wenku.baidu.com/view/e8ff504aa8956bec0975e30a.html)
+
 - **交叉表 Crosstab**
   - 定类-定类：lambda, tau-y
   - 定序-定序：gamma，斯皮尔曼 rho
@@ -80,7 +106,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 
   - **相关**
 
-    - 定义：两事物之间非一一对应的统计关系（薛薇）
+    - 定义：两事物之间非一一对应的统计关系(薛薇)
     - 操作：
 
       1. 绘制散点图查看变量间是否可能存在相关关系
@@ -96,7 +122,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
          - 正负：正相关与负相关
          - 大小：经验值，r<0.2 极弱或无；0.2-0.4 弱；0.4-0.6 中；0.6-0.8 强；0.9-1 极强
       2. p 值  
-         $p < 0.05$ ($p < \alpha, \alpha$ 也可以是 0.01) 即显著（我们拒绝“两个变量不存在相关关系”的零假设，而接受“两个变量存在相关关系”备择假设，这种判断与事实不符的概率）
+         $p < 0.05$ ($p < \alpha, \alpha$ 也可以是 0.01) 即显著(我们拒绝“两个变量不存在相关关系”的零假设，而接受“两个变量存在相关关系”备择假设，这种判断与事实不符的概率)
     - 报告：
 
       - 相关系数 / r
@@ -104,13 +130,16 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
       - 根据显著性水平标注 \* 号
 
     - 假定：
-      1. Pearson 相关系数要求两个样本均符合正态分布（以参数检验）
+      1. Pearson 相关系数要求两个样本均符合正态分布(以参数检验)
       2. 样本独立性
       3. \*极值已经处理
-    - \* [三种相关系数？](https://zhuanlan.zhihu.com/p/34717666) Pearson 相关系数用于定距定比变量之间的相关关系（参数检验）；Spearman 相关系数用于定序变量间相关关系（参数检验）；Kendall 相关系数用于度量定序变量间线性相关关系（非参数检验）。
+    - \* [三种相关系数？](https://zhuanlan.zhihu.com/p/34717666) Pearson 相关系数用于定距定比变量之间的相关关系(参数检验)；Spearman 相关系数用于定序变量间相关关系(参数检验)；Kendall 相关系数用于度量定序变量间线性相关关系(非参数检验)。
     - [\*不符合正态分布？](https://zhuanlan.zhihu.com/p/27013779) 开根号、对数、倒数等
 
   - **回归**
+    - 操作
+    - 假定
+    - 报告
 
 - **降维 Dimension reduction**
   - 因子分析 Factor analysis
