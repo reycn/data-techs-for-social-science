@@ -6,6 +6,18 @@
 An individual project designed for beginners.  
 为初学者设计的独立项目。
 
+  
+
+## 快速导航
+
+| 工具       | Markdown                                                     | PDF                                                          | 资源 |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| SPSS       | [在线阅读](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/markdown/SPSS.md). [下载](https://github.com/reycn/Data-Techs-for-Social-Science/raw/master/markdown/SPSS.md) | [在线阅读](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/pdf/SPSS.pdf). [下载](https://github.com/reycn/Data-Techs-for-Social-Science/raw/master/pdf/SPSS.pdf) | 查看 |
+| R Language | [在线阅读](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/R.md). [下载](https://github.com/reycn/Data-Techs-for-Social-Science/raw/master/markdown/R.md) | 在线阅读. 下载                                               | 查看 |
+| Python     | [在线阅读](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/Python.md). [下载](https://github.com/reycn/Data-Techs-for-Social-Science/raw/master/markdown/Python.md) | 在线阅读. 下载                                               | 查看 |
+
+
+
 ## [SPSS](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/markdown/SPSS.md) (_Writing_)
 
 ### 一、软件简介
