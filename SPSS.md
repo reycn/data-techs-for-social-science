@@ -46,14 +46,19 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
   - 描述统计量 Descriptives
   - 交叉表 Crosstabs
 - **推断统计 Inferential statistics**
+
   - 两种假设与两类错误
+
     - 零/原假设(Null/default hypothesis) 与备择假设(Alternative hypothesis)
-    - 一类错误(type I error)：原假设正确但被错误拒绝——男人怀孕了
-    - 二类错误(type II error)：原假设错误但被错误接受——孕妇没怀孕  
-      ![Error Types](https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/res/SPSS/error-types.jpg?raw=true)
-  - 显著性水平  
+    - 一类错误(type I error)：“弃真”，原假设正确但被错误地拒绝——男人怀孕了
+    - 二类错误(type II error)：“取伪”，原假设错误但被错误地接受——孕妇没怀孕
+
+      <img src="https://github.com/reycn/Data-Techs-for-Social-Science/blob/master/res/SPSS/error-types.jpg?raw=true" width="400">
+
+  - 显著性水平 $\alpha$  
     0.05 \*
     0.01 \*\*
+
 - **比较均值** 统计课上已经学过
   - 类型
     1. 单样本 t 检验 (One-Sample T Test)
