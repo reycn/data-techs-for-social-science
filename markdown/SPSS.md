@@ -1,5 +1,32 @@
 # 定量分析方法入门 (SPSS)
 
+- [目录](#----------spss-)
+  - [一、SPSS 软件简介](#--spss-----)
+  - [二、SPSS 具体操作](#--spss-----)
+    - [（一）读取、选择与录入](#-----------)
+    - [（二）清理与转换](#--------)
+      - [数据清理 Data cleaning](#-----data-cleaning)
+      - [转换数据 Transformation](#-----transformation)
+      - [\* 合并数据 Merge](#--------merge)
+      - [计算数据 Compute](#-----compute)
+    - [（三）分析 Analyze](#------analyze)
+      - [分析的类型](#-----)
+      - [描述统计 Descriptive statistics](#-----descriptive-statistics)
+      - [推断统计 Inferential statistics](#-----inferential-statistics)
+      - [均值 t 检验 T-test](#---t----t-test)
+      - [\*非参数检验](#-------)
+      - [\*方差分析 ANOVA](#-------anova)
+      - [\*聚类分析](#------)
+      - [相关与回归 Correlation and regression](#------correlation-and-regression)
+      - [降维 Dimension reduction](#---dimension-reduction)
+    - [（四）绘图 Graphs](#------graphs)
+      - [条形图 Histogram](#----histogram)
+      - \*散点图、折线图、饼图、箱线图(小提琴图)
+  - [三、参考资料](#------)
+  - [四、拓展阅读](#------)
+
+---
+
 > 文中链接仅用于初次接触快速通过网页了解，请通过查阅书籍学习详情。
 
 ## 一、SPSS 软件简介
@@ -45,24 +72,24 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 
 ### （二）清理与转换
 
-#### **数据清理** Data cleaning
+#### 数据清理 Data cleaning
 
 是整个数据流程本身的 60%工作甚至更多
 
 - **缺失值**：分析中排除个案；建模中可以考虑排除或者使用均值填充
 - **异常值**：[箱线图](https://zhuanlan.zhihu.com/p/22910012)、z-score $z=\frac{x-\mu}{\sigma}$ > 2.5/3/3.5
 
-#### **转换数据** Transformation
+#### 转换数据 Transformation
 
 - 重编码 Recode（不推荐，会覆盖原始数据）： `转换` - `重编码为相同变量`-`选择变量`- `旧值和新值`- 定义对应关系 -`确定`
 - 重编码为不同变量 Recode into different variables：`转换` - `重编码为不同同变量`-`选择变量`- `旧值和新值`-定义对应关系-`确定`
 - \* [可视分箱](https://blog.csdn.net/yaner0210/article/details/52974007)？
 
-#### **\* 合并数据 Merge**
+#### \* 合并数据 Merge
 
 [纵向添加个案、横向添加变量](https://zhuanlan.zhihu.com/p/23302868)
 
-#### **计算数据 Compute**
+#### 计算数据 Compute
 
 `转换` - `计算变量`-`目标变量`- 对应关系 -（如果...）-
 
@@ -77,7 +104,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 - 多变量
 - 等等
 
-#### **描述统计 Descriptive statistics**
+#### 描述统计 Descriptive statistics
 
 - **频率 Frequencies**：`分析` - `描述统计`- `频率`-选择变量 -`统计量`-`图表`-`格式`（按计数的个数排序）
 - **描述统计量 Descriptives**：`分析` - `描述统计`- `描述`/`探索`
@@ -85,7 +112,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
   - 离散趋势：标准差、方差、最大值、最小值、范围(range)、分布（对称、左偏、右偏）
   - 样本与总体
 
-#### **推断统计 Inferential statistics**
+#### 推断统计 Inferential statistics
 
 - **[两种假设与两类错误](https://blog.csdn.net/Andy_shenzl/article/details/81480280)**
 
@@ -104,7 +131,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 - **显著性水平 $\alpha$**  
   < 0.05 \*, < 0.01 \*\*, < 0.001\*\*\*
 
-#### **均值 t 检验 T-test**
+#### 均值 t 检验 T-test
 
 统计课上已经学过
 
@@ -142,21 +169,21 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 - 报告：均值、p 值
 - [\* 单尾 t 检验如何实现？](https://wenku.baidu.com/view/e8ff504aa8956bec0975e30a.html) 大于、小于问题
 
-#### \***非参数检验**
+#### \*非参数检验
 
 当总体参数不可知的情况下进行推断统计的方法，网上比较散，薛薇书籍
 
-#### \*[**方差分析 ANOVA**](https://zhuanlan.zhihu.com/p/26549114)
+#### \*方差分析 ANOVA
 
 很重要（可以用于多个组别之间的对比）但暂不涉及，约科奇或薛薇书籍，需要注意方差分析的假定
 
 - 方差分析 ANOVA、协方差分析 ANCOVA、多元方差分析 MANOVA
 
-#### **\*聚类分析**
+#### \*聚类分析
 
 根据数据特征，在没有先验知识的情况下自动分类（机器学习：无监督学习 unsupervised learning）。SPSS 能够完成层次聚类、K-means 聚类
 
-#### **相关与回归 Correlation and regression**
+#### 相关与回归 Correlation and regression
 
 - **定距以下变量间相关：交叉表 Crosstab / 列联表 contingency tables** 与相关系数
 
@@ -282,7 +309,7 @@ SPSS Statistics is a software package used for interactive, or batched, statisti
 
 - **\*中介分析、调节分析、中介调节分析**：自变量和因变量的关系的发生可能是经由一些变量产生影响(中介反应 mediation effect)或者取决于一些变量的影响（调节反应 moderation effect），SPSS AMOS, [process](https://processmacro.org/index.html) in SPSS, [lavaan ](http://lavaan.ugent.be/) in R
 
-#### **降维 Dimension reduction**
+#### 降维 Dimension reduction
 
 - 意义：将多个变量合并，减少计算量、减少变量间相关性、避免之后建模的多重共线性
 - **(探索性) 因子分析 (Exploratory) Factor analysis**
