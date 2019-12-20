@@ -25,8 +25,6 @@
   - [三、参考资料](#------)
   - [四、拓展阅读](#------)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 > 文中链接仅用于初次接触快速通过网页了解，请通过查阅书籍学习详情。
 
 ## 一、SPSS 软件简介
